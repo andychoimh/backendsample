@@ -96,5 +96,10 @@ app.post("/delete/:id", async (req, res) => {
     }
   });
 
+// Creating a demo page as part of the exercise
+app.get('/demo', function(req, res){
+  res.render('pages/demo');
+});
+
 // Tells the app which port to run on
 app.listen(8080);
